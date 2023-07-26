@@ -45,11 +45,11 @@
 }
 
 .navbar a {
-  color: var(--hover-color);
+  color: var(--subtext-color);
 }
 
 .navbar a:hover {
-  color: var(--primary-color);
+  color: var(--hover-color);
 }
 
 .login a {
@@ -60,7 +60,7 @@
 }
 
 .login a:hover {
-  background-color: var(--primary-color);
+  background-color: var(--button-color);
   color: var(--secondary-color);
 }
 /*  --------- HERO --------------- */
@@ -234,10 +234,117 @@
   justify-content: center;
   align-items: center;
   padding: 18px;
+}
+
+.card__info h4 {
   color: var(--hover-color);
 }
 
-.card__info a {
+.card__info p {
   font-size: 12px;
   color: var(--subtext-color);
+}
+
+/*---------------- CONTACT ------------- */
+
+#contact {
+  max-width: 2000px;
+  background-color: var(--background-color);
+  padding: 100px 0px;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid var(--subtext-color);
+  padding: 30px;
+}
+
+.contact__info h1 {
+  font-size: 32px;
+  color: var(--hover-color);
+}
+
+.contact__socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.contact__socialmedia img:hover {
+  transform: translateY(-10%);
+  color: var(--hover-color);
+}
+
+.contact__newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--hover-color);
+  font-size: 18px;
+}
+
+.newsletter__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.newsletter__form input[type="email"] {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid var(--primary-color);
+  height: 32px;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 16px;
+}
+
+.contact__info img,
+.contact__newsletter img {
+  height: 60px;
+}
+
+.newsletter__form input[type="image"] {
+  height: 32px;
+  padding: 0px 10px;
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+  max-width: 2000px;
+  background-color: var(--background-color);
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--subtext-color);
+}
+
+.footer p {
+  color: var(--subtext-color);
+  font-weight: 200;
+}
+
+.footer a {
+  color: var(--subtext-color);
+}
+
+.footer img {
+  height: 40px;
 }
