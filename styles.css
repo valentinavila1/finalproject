@@ -15,6 +15,7 @@
   font-family: "Kanit", sans-serif;
   list-style-type: none;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 .header {
@@ -23,6 +24,11 @@
   align-items: center;
   background-color: var(--background-color);
   padding: 30px;
+}
+
+.header img {
+  height: 55px;
+  cursor: pointer;
 }
 
 .navbar {
@@ -54,6 +60,184 @@
 }
 
 .login a:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+/*  --------- HERO --------------- */
+
+#hero {
+  max-width: 2000px;
+  background-color: var(--background-color);
+}
+
+.hero__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__text {
+  color: var(--hover-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__text h1 {
+  font-size: 95px;
+  text-align: center;
+  width: 80%;
+}
+
+.hero__text p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--subtext-color);
+  padding: 10px;
+}
+
+.hero__btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 25px;
+}
+
+.btn__one:hover {
+  transform: translateY(10%);
+}
+
+.btn__two:hover {
+  transform: translateY(10%);
+}
+
+.btn__one a,
+.btn__two a {
+  border: 1px solid var(--button-color);
+  color: var(--hover-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn__one a {
   background-color: var(--button-color);
   color: var(--secondary-color);
+}
+
+.hero__img img {
+  height: 780px;
+  width: 780px;
+  cursor: pointer;
+}
+
+/*---------- About US ------------*/
+
+#aboutus {
+  max-width: 2000px;
+  background-color: var(--background-color);
+}
+
+.aboutus__container {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+}
+
+.aboutus__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutus__text h2 {
+  color: var(--hover-color);
+  font-weight: 400;
+  font-size: 25px;
+  padding: 50px;
+  text-align: center;
+}
+
+.aboutus__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--hover-color);
+  box-shadow: 3px 3px;
+  padding: 40px;
+  border-radius: 16px;
+  width: 100%;
+}
+
+.aboutus__slide img {
+  height: 50px;
+}
+
+/*--------- CARDS / PRODUCTS --------- */
+
+#products {
+  max-width: 2000px;
+  background-color: var(--background-color);
+  padding: 60px 0px;
+}
+
+.products__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--hover-color);
+  padding: 30px;
+  font-size: 24px;
+}
+
+.products__text a {
+  color: var(--hover-color);
+  border: 1px solid var(--button-color);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.products__cards {
+  display: flex;
+  padding: 20px 0px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cards-color);
+  border-radius: 12px;
+  width: 350px;
+  height: 300px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px var(--secondary-color);
+  transform: translateY(-4%);
+  background-color: var(--cards-hover-color);
+}
+
+.card img {
+  height: 200px;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  color: var(--hover-color);
+}
+
+.card__info a {
+  font-size: 12px;
+  color: var(--subtext-color);
 }
