@@ -1,0 +1,186 @@
+@media (max-width: 1200px) {
+  .hero__text h1 {
+    font-size: 70px;
+    width: 80%;
+  }
+
+  .aboutus__slide img {
+    height: 40px;
+  }
+
+  .products__cards {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .contact__newsletter h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero__text h1 {
+    font-size: 55px;
+  }
+
+  .hero__img img {
+    height: 420px;
+    width: 420px;
+  }
+
+  .aboutus__text h2 {
+    font-size: 20px;
+  }
+
+  .contact__newsletter h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 812px) {
+  .hero__text p {
+    text-align: center;
+  }
+
+  .aboutus__slide img {
+    height: 30px;
+  }
+
+  .contact__newsletter h2 {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .header img {
+    display: none;
+  }
+
+  .hero__text h1 {
+    font-size: 38px;
+  }
+
+  .hero__text p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .hero__btns {
+    padding: 15px;
+  }
+
+  .btn__one a,
+  .btn__two a {
+    font-size: 13px;
+  }
+
+  .hero__img img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .aboutus__text h2 {
+    font-size: 20px;
+  }
+
+  .aboutus__slide img {
+    height: 26px;
+  }
+
+  .products__text {
+    font-size: 18px;
+  }
+
+  .contact__newsletter h2 {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header img {
+    display: block;
+  }
+
+  .navbar ul {
+    background: white;
+    width: 100%;
+    height: calc(100vh - 30px);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+
+  .navbar i {
+    display: block;
+  }
+
+  #toggle-menu:checked ~ .navbar ul {
+    display: flex;
+  }
+
+  #hero {
+    padding: 20px;
+  }
+
+  .hero__text {
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .hero__img {
+    display: none;
+  }
+
+  .hero__text p {
+    font-size: 15px;
+  }
+
+  .hero__btns {
+    padding: 16px;
+  }
+
+  .btn__one a,
+  .btn__two a {
+    padding: 16px;
+    font-size: 12px;
+  }
+
+  .aboutus__text h2 {
+    font-size: 20px;
+  }
+
+  .aboutus__slide {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .aboutus__slide img {
+    height: 25px;
+  }
+
+  .contact__container {
+    flex-direction: column;
+  }
+
+  .contact__info {
+    border-right: none;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer p,
+  .footer a {
+    font-size: 12px;
+  }
+}
