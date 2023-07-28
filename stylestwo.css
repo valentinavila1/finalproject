@@ -20,6 +20,8 @@ body {
   transform: translate(-50%, -50%);
   padding: 100px;
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .login img,
@@ -36,7 +38,7 @@ body {
   text-align: center;
   color: #ffffff;
   font-size: 50px;
-  padding-left: 50px;
+  padding-left: 55px;
   letter-spacing: 4px;
 }
 
@@ -86,6 +88,9 @@ body {
 }
 
 .button-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding-left: 24px;
 }
