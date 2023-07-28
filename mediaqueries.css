@@ -81,12 +81,8 @@
     text-align: center;
   }
 
-  .login {
-    padding: 100px 60px;
-  }
-
   .login img {
-    left: 40%;
+    left: 42%;
   }
 
   .login h1 {
@@ -176,7 +172,7 @@
   }
 
   .navbar ul {
-    background: white;
+    background: red;
     width: 100%;
     height: calc(100vh - 30px);
     position: absolute;
@@ -192,7 +188,7 @@
     display: block;
   }
 
-  #toggle-menu:checked ~ .navbar ul {
+  #toggle-menu ~ .navbar ul {
     display: flex;
   }
 
@@ -231,7 +227,7 @@
   }
 
   .aboutus__text h2 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .aboutus__slide {
@@ -268,11 +264,12 @@
 
   .login h1 {
     font-size: 30px;
-    padding: 0px 100px;
+    padding: 0px 60px;
   }
 
-  .login a {
-    font-size: 12px;
+  .login a,
+  .register a {
+    font-size: 14px;
     text-align: center;
   }
 
