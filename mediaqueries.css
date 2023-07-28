@@ -131,7 +131,12 @@
   .hero__text {
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .hero__text h1 {
+    font-size: 40px;
   }
 
   .hero__img {
@@ -140,6 +145,7 @@
 
   .hero__text p {
     font-size: 15px;
+    padding: 16px;
   }
 
   .hero__btns {
@@ -153,7 +159,7 @@
   }
 
   .aboutus__text h2 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .aboutus__slide {
