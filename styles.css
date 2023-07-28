@@ -218,6 +218,11 @@
   padding: 16px;
 }
 
+.products__text a:hover {
+  background-color: var(--button-color);
+  color: var(--secondary-color);
+}
+
 .products__cards {
   display: flex;
   padding: 20px 0px;
