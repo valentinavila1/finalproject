@@ -108,11 +108,46 @@
 
 @media (max-width: 768px) {
   .header img {
+    display: block;
+  }
+
+  .header {
+    border-bottom: 1px solid #8fff6a;
+  }
+
+  .navbar {
+    order: 3;
+  }
+
+  .navbar:hover {
+    color: #8fff6a;
+  }
+
+  .navbar-list {
+    background: #8fff6a;
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 115px;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 20px 20px;
     display: none;
   }
 
+  .navbar i {
+    display: block;
+  }
+
+  #toggle-menu:checked ~ .navbar-list {
+    display: flex;
+  }
+
   .hero__text h1 {
-    font-size: 38px;
+    font-size: 40px;
+    width: 100%;
   }
 
   .hero__text p {
@@ -130,8 +165,8 @@
   }
 
   .hero__img img {
-    height: 300px;
-    width: 300px;
+    height: 340px;
+    width: 340px;
   }
 
   .aboutus__text h2 {
@@ -147,23 +182,27 @@
   }
 
   .contact__newsletter h2 {
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
   }
+}
 
-  .login h1 {
-    font-size: 40px;
-    padding: 0px 100px;
-  }
+.login h1 {
+  font-size: 40px;
+  padding: 0px 100px;
+}
 
-  .register img {
-    left: 42%;
-  }
+.register img {
+  left: 42%;
+}
 
-  .register h1 {
-    font-size: 50px;
-    padding: 0px 50px;
-  }
+.register h1 {
+  font-size: 50px;
+  padding: 0px 50px;
+}
+
+.card img {
+  height: 170px;
 }
 
 @media (max-width: 480px) {
@@ -171,16 +210,29 @@
     display: block;
   }
 
-  .navbar ul {
-    background: red;
+  .header {
+    border-bottom: 1px solid #8fff6a;
+  }
+
+  .navbar {
+    order: 3;
+  }
+
+  .navbar:hover {
+    color: #8fff6a;
+  }
+
+  .navbar-list {
+    background: #8fff6a;
     width: 100%;
-    height: calc(100vh - 30px);
+    height: calc(100vh - 80px);
     position: absolute;
-    top: 80px;
+    top: 115px;
     left: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 0px 0px 20px 20px;
     display: none;
   }
 
@@ -188,7 +240,7 @@
     display: block;
   }
 
-  #toggle-menu ~ .navbar ul {
+  #toggle-menu:checked ~ .navbar-list {
     display: flex;
   }
 
@@ -204,7 +256,7 @@
   }
 
   .hero__text h1 {
-    font-size: 40px;
+    font-size: 55px;
   }
 
   .hero__img {
@@ -228,6 +280,7 @@
 
   .aboutus__text h2 {
     font-size: 18px;
+    padding: 35px;
   }
 
   .aboutus__slide {
@@ -236,7 +289,7 @@
   }
 
   .aboutus__slide img {
-    height: 25px;
+    height: 30px;
   }
 
   .contact__container {
@@ -280,5 +333,9 @@
   .register h1 {
     font-size: 40px;
     padding: 0px 10px;
+  }
+
+  .card img {
+    height: 140px;
   }
 }
