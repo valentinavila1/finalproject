@@ -339,3 +339,10 @@
     height: 140px;
   }
 }
+
+@media (max-width: 390px) {
+  .btn__one a,
+  .btn__two a {
+    padding: 10px;
+  }
+}
