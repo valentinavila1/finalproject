@@ -24,11 +24,10 @@ body {
   flex-direction: column;
 }
 
-.login img,
-.register img {
+.login img {
   position: absolute;
   top: -10%;
-  left: 46%;
+  left: 45%;
   width: 100px;
   height: 100px;
 }
